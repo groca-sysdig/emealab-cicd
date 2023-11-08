@@ -16,6 +16,7 @@ spec:
 
 
 
+
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -42,4 +43,4 @@ spec:
         - containerPort: 8080
         securityContext:
           runAsUser: 0
-          allowPrivilegeEscalation: true
+          allowPrivilegeEscalation: false

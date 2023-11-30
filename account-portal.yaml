@@ -16,6 +16,7 @@ spec:
 
 
 
+
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -43,3 +44,4 @@ spec:
         securityContext:
           runAsUser: 0
           allowPrivilegeEscalation: true
+          readOnlyRootFilesystem: true
